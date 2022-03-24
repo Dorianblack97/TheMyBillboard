@@ -1,0 +1,10 @@
+﻿@model MessageCreationViewModel
+
+@{
+    ViewData["Title"] = "Message creation";
+}
+
+<div class="text-center" xmlns="http://www.w3.org/1999/html">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    @await Html.PartialAsync("MessageCreate", Model)
+</div>
